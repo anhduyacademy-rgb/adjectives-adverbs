@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjective or Adverb Exercise</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .sentence { margin-bottom: 20px; padding: 10px; border-bottom: 1px solid #eee; }
+        .q-num { font-weight: bold; color: #3498db; margin-right: 10px; }
+        
+        select {
+            padding: 5px;
+            margin: 0 5px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        select.wrong {
+            border-color: #e74c3c;
+            background-color: #fdeaea;
+        }
+        
+        select.correct {
+            border-color: #2ecc71;
+            background-color: #eafaf1;
+        }
+
+        .btn-container { margin-top: 30px; text-align: center; }
+        button {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover { background-color: #2980b9; }
+        #feedback {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Task 1: Adjective or Adverb</h1>
+    <p>Choose the correct form for each sentence. Click "Check Answers" when you are finished!</p>
+    <hr>
+
+    <div id="quiz">
+        <div class="sentence">
+            <span class="q-num">1.</span> Joe climbs up <select data-ans="steep"><option value="">---</option><option value="steep">steep</option><option value="steeply">steeply</option></select> hills every weekend. He has <select data-ans="hardly"><option value="">---</option><option value="hard">hard</option><option value="hardly">hardly</option></select> done anything else in the last months.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">2.</span> We drove on the highway <select data-ans="endlessly"><option value="">---</option><option value="endless">endless</option><option value="endlessly">endlessly</option></select> before we arrived at a <select data-ans="huge"><option value="">---</option><option value="huge">huge</option><option value="hugely">hugely</option></select> valley.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">3.</span> Peter has trained tennis <select data-ans="hard"><option value="">---</option><option value="hard">hard</option><option value="hardly">hardly</option></select> in the last weeks so I think he will be <select data-ans="better"><option value="">---</option><option value="good">good</option><option value="better">better</option></select> than me in our next match.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">4.</span> I almost missed the <select data-ans="last"><option value="">---</option><option value="last">last</option><option value="lastly">lastly</option></select> bus yesterday so I had to run <select data-ans="quickly"><option value="">---</option><option value="quick">quick</option><option value="quickly">quickly</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">5.</span> The traffic was moving very <select data-ans="slowly"><option value="">---</option><option value="slow">slow</option><option value="slowly">slowly</option></select> so my mum became <select data-ans="nervous"><option value="">---</option><option value="nervous">nervous</option><option value="nervously">nervously</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">6.</span> This book was even <select data-ans="worse"><option value="">---</option><option value="bad">bad</option><option value="worse">worse</option></select> than the last one. I will throw it on the rubbish <select data-ans="directly"><option value="">---</option><option value="direct">direct</option><option value="directly">directly</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">7.</span> I watched your favourite soap opera <select data-ans="lately"><option value="">---</option><option value="late">late</option><option value="lately">lately</option></select>. The channel showed it <select data-ans="late"><option value="">---</option><option value="late">late</option><option value="lately">lately</option></select> in the evening.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">8.</span> I couldn't understand her very <select data-ans="well"><option value="">---</option><option value="good">good</option><option value="well">well</option></select>. She was talking so <select data-ans="fast"><option value="">---</option><option value="fast">fast</option><option value="fastly">fastly</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">9.</span> My mother was shouting <select data-ans="angrily"><option value="">---</option><option value="angry">angry</option><option value="angrily">angrily</option></select> because I have done my homework too <select data-ans="slowly"><option value="">---</option><option value="slow">slow</option><option value="slowly">slowly</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">10.</span> They expected a <select data-ans="horrible"><option value="">---</option><option value="horrible">horrible</option><option value="horribly">horribly</option></select> ghost but then they laughed <select data-ans="happily"><option value="">---</option><option value="happy">happy</option><option value="happily">happily</option></select> because it was only a <select data-ans="small"><option value="">---</option><option value="small">small</option><option value="smally">smally</option></select> cat.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">11.</span> He jumped over the hedge and fell <select data-ans="hard"><option value="">---</option><option value="hard">hard</option><option value="hardly">hardly</option></select> on the ground at the other side. His left foot hurt <select data-ans="badly"><option value="">---</option><option value="bad">bad</option><option value="badly">badly</option></select> afterwards.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">12.</span> Please, dial the number of the hospital <select data-ans="quickly"><option value="">---</option><option value="quick">quick</option><option value="quickly">quickly</option></select>! My dad can't walk <select data-ans="right"><option value="">---</option><option value="right">right</option><option value="rightly">rightly</option></select> after the accident.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">13.</span> It's not my fault that Joe is so <select data-ans="mean"><option value="">---</option><option value="mean">mean</option><option value="meanly">meanly</option></select> with his money. I know he doesn't invite anyone <select data-ans="easily"><option value="">---</option><option value="easy">easy</option><option value="easily">easily</option></select>.
+        </div>
+
+        <div class="sentence">
+            <span class="q-num">14.</span> The road is getting <select data-ans="worse"><option value="">---</option><option value="bad">bad</option><option value="worse">worse</option></select> after every turning. I hope that we have taken the <select data-ans="right"><option value="">---</option><option value="right">right</option><option value="rightly">rightly</option></select> turning an hour ago.
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="checkAnswers()">Check Answers</button>
+        <p id="feedback"></p>
+    </div>
+</div>
+
+<script>
+    function checkAnswers() {
+        const selects = document.querySelectorAll('select');
+        let correctCount = 0;
+        let totalCount = selects.length;
+        let allFilled = true;
+
+        selects.forEach(select => {
+            const userAnswer = select.value;
+            const correctAnswer = select.getAttribute('data-ans');
+
+            if (userAnswer === "") {
+                allFilled = false;
+                select.classList.remove('wrong', 'correct');
+            } else if (userAnswer === correctAnswer) {
+                select.classList.add('correct');
+                select.classList.remove('wrong');
+                correctCount++;
+            } else {
+                select.classList.add('wrong');
+                select.classList.remove('correct');
+            }
+        });
+
+        const feedback = document.getElementById('feedback');
+        if (!allFilled) {
+            feedback.style.color = "#e67e22";
+            feedback.innerText = "Please answer all questions before checking.";
+        } else if (correctCount === totalCount) {
+            feedback.style.color = "#27ae60";
+            feedback.innerText = "Excellent! All answers are correct.";
+        } else {
+            feedback.style.color = "#e74c3c";
+            feedback.innerText = `You got ${correctCount} out of ${totalCount} right. Look at the red boxes and try again!`;
+        }
+    }
+
+    // Remove red highlight when the user changes their answer
+    document.querySelectorAll('select').forEach(select => {
+        select.addEventListener('change', function() {
+            this.classList.remove('wrong');
+        });
+    });
+</script>
+
+</body>
+</html>
